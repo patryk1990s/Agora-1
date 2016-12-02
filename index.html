@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+	<title>Nowe utwory</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/sb-admin.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.0/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+
+<!-- Custom Fonts -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+</style> 
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+<div id="wrapper">
+	<!-- Nawigacja -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+
+<!-- Menu i Logo -->
+<ul class="nav navbar-nav left-nav">
+<li>
+<!-- menu rozwijane
+<select title="Wybierz stację" class="selectpicker">
+  <option data-content="<img src='images/stacje/tokfm.png' width='30%'>">Tok FM</option>
+  <option data-content="<img src='images/stacje/tokfm.png' width='30%'>">Tok FM</option>
+  <option data-content="<img src='images/stacje/tokfm.png' width='30%'>">Tok FM</option>
+  <option data-content="<img src='images/stacje/tokfm.png' width='30%'>">Tok FM</option>
+  <option data-content="<img src='images/stacje/tokfm.png' width='30%'>">Tok FM</option>
+</select>
+-->
+	</li>
+	<li class="dropdown"><a href="index.html"><img style="width: 30%; padding-left:15px; visibility: hidden;" src="agora.png"></a></li>
+	<li class="active"><a href="index.html">Nowe</a></li>
+	<li><a href="zatwierdzoneutwory.html">Zatwierdzone</a></li>
+	<li><a href="kosz.html">Kosz</a></li>
+</ul>
+          
+<!-- Top Menu Prawa Strona -->
+<ul class="nav navbar-right top-nav">
+
+  <!--Ustawienia -->
+  <li class="dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span> Ustawienia<b class="caret"></b></a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="zarztematami.html"><span class="glyphicon glyphicon-tags"></span> Tematy</a>
+			</li>
+			<li>
+				<a href="uzyt_mobilni.html"><span class="glyphicon glyphicon-phone"></span> Użytkownicy mobilni</a>
+			</li>
+			<li>
+				<a href="uzyt_systemowi.html"><span class="glyphicon glyphicon-user"></span> Administratorzy</a>
+			</li>
+			<li class="divider"></li>
+			<li>
+				<a href="#"><span class="glyphicon glyphicon-off"></span> Wyloguj</a>
+			</li>
+		</ul>
+	</li> 
+
+</ul>
+</nav> <!--Koniec nawigacji -->
+
+
+
+<div id="page-wrapper">
+	<div class="container-fluid">
+		<!-- Nagłówek Strony -->
+			<div class="row">
+			<!-- Odtwarzacz -->
+		
+				<img class="slider1" src="images/pasek.png">
+		
+			<!-- Koniec odtwarzacza -->
+			</div>
+			<!-- /.row -->
+			
+			<hr />	
+			
+		<div class="row">                  
+			<div class="col-md-12 c
+			ol-sm-12">
+				<div class="col-md-6 col-sm-6">
+			 
+		   <div class="row">
+			<div class="col-md-4 col-sm-4">
+			<div class="custom-search-input">
+			<div class="input-group">
+			<input type="text" class="form-control input-lg" placeholder="Temat Nagrania" />
+			<span class="input-group-btn">
+			<button class="btn btn-info btn-lg" type="button">
+			<i class="glyphicon glyphicon-search"></i>
+			</button>
+			</span>
+			</div>
+			</div>
+			</div>
+  <div class="col-md-4 col-sm-4">
+     <div class="custom-search-input">
+                <div class="input-group">
+                    <input type="text" class="form-control input-lg" placeholder="Treść komentarza" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+  </div>
+				<div class="col-md-4 col-sm-4">
+     <div class="custom-search-input">
+                <div class="input-group">
+                    <input type="text" class="form-control input-lg" placeholder="Użytkownik" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+  </div>
+				 </div>
+				 </div>
+				
+				
+				
+
+				<div class="col-md-4">       
+
+
+				<div class="form-group col-md-6 col-sm-6">
+					<div class="input-group date" id="datetimepicker1">
+						<input type="text" class="form-control" placeholder="Data od:"/>
+						<span class="input-group-addon">
+							<span class="glyphicon glyphicon-calendar"></span>
+						</span>
+					</div>
+				</div>
+
+				<div class="form-group col-md-6 col-sm-6">
+					<div class="input-group date" id="datetimepicker2">
+						<input type="text" class="form-control" placeholder="Data do:"/>
+						<span class="input-group-addon">
+							<span class="glyphicon glyphicon-calendar"></span>
+						</span>
+					</div>
+				</div>
+				
+				
+				<!-- Date Picker Skrypt-->
+				<script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+
+				</div>  
+
+				<div class="col-md-2 col-sm-2 ">
+			
+				 
+            <div class="toggle-button toggle-button--tuli">
+                <input id="toggleButton11" type="checkbox">
+                <label for="toggleButton11">VIP</label>
+                <div class="toggle-button__icon"></div>
+            </div>
+            <div class="toggle-button toggle-button--tuli">
+                <input id="toggleButton12" type="checkbox">
+                <label for="toggleButton12">Użytkownik</label>
+                <div class="toggle-button__icon"></div>
+            </div>
+				</div>        
+      		</div>
+	
+	   </div><!-- /.row -->
+	   <!--Koniec pierwszego wiersza-->
+
+		<div class="row">	
+			<div class="col-md-12" style="padding-top: 1%;">	
+			
+		<div class="col-md-10">
+		<button type="button" class="btn btn-sm btn-filtr"> O dzieciach <span class="glyphicon glyphicon-remove"></span></button>
+		
+		<button type="button" class="btn btn-sm btn-filtr"> Długość powyżej: 2 min <span class="glyphicon glyphicon-remove"></span></button>
+		
+		<button type="button" class="btn btn-sm btn-filtr"> Dzień do: 15-06-2016 <span class="glyphicon glyphicon-remove"></span></button>
+		</div>
+			
+			<div class="col-md-2">
+			<button type="button" class="btn btn-sm btn-czysc-filtry pull-right">Wyczyść filtry</button>
+			</div>
+		</div>
+		</div>
+		
+	<hr />
+		<!--Koniec filtrów-->
+		
+<div class="row">		
+   <div class="col-md-12" style="padding-top: 2%;">
+                        
+<div class="table-responsive">
+
+
+<table id="example" class="table table-hover table-striped display" >
+	<thead>
+		<tr>
+<th style="width: 10%">Data odebrania <span><i style="opacity: 1;" class="glyphicon glyphicon-chevron-down"></i> </span></th>
+<th>Użytkownik <span><i style="opacity: 1;" class="glyphicon glyphicon-chevron-up"></i> </span></th>
+<th style="width: 15% padding-left: 25px padding-right: 25px;">Temat nagrania <span><i style="opacity: 1;" class="glyphicon glyphicon-chevron-up"></i> </span></th>
+<th style=" padding-left: 25px padding-right: 25px;">Komentarz autora <span><i style="opacity: 1;" class="glyphicon glyphicon-chevron-up"></i> </span></th>
+<th style="width: 10%">Długość <span><i style="opacity: 1;" class="glyphicon glyphicon-chevron-up"></i> </span></th>
+<th style="text-align:center; ">Zdjęcie</th>
+<th style="width: 8%; text-align:center; "><span>Odtwórz</span></th>
+<th style="width: 6%; text-align:center; "><span>Edycja</span></th>
+<th><label><input type="checkbox" class="toggle-button__icon" value=""></label></th>
+		</tr>
+	</thead>
+	<tbody>
+	 <tr>	
+
+			<td>2016-06-27 <br> 12:42:16</td>
+			<td width="10%"><a href="uzyt_mobilni"> Jan Kowalski </a> <span class="glyphicon glyphicon-star align-center"></span></td>
+			<td>Jest dostępnych wiele różnych wersji Lorem Ipsum, ale większość zmieniła się pod wpływem dodanego humoru czy przypadkowych słów</td>
+			<td>Aby rozpocząć, należy określić średnią długość linii i narysować linię pionową na dole strony. Liczenie wszystkich znaków w jednej pełnej linii od lewego marginesu do tej linii, a następnie pomnożyć przez wynik przez liczbę linii na stronie. To powinno zapewnić mniej więcej liczbę znaków na stronę.</td>
+			<td>03:15:45</td>
+
+			<td>
+		
+				<img src="images/przyklad100x100.jpg" style="cursor: pointer;"  data-toggle="modal" data-target="#myModal3">
+				<div id="myModal3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				<img src="images/przyklad3.jpg" class="img-responsive center-block" >
+				</div>
+				</div>
+			
+			
+		   </td>
+		 <td>
+          <button title="Edit" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+          <i class="glyphicon glyphicon-play"></i> 
+          </button>
+		</td>
+			<td>
+			<button title="Edit" data-toggle="modal" data-target="#myModal" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+                
+                
+			<td><input type="checkbox" value=""></td>
+		</tr>
+		<tr>	
+
+			<td>2016-06-27 <br> 12:42:16</td>
+			<td width="10%"><a href="uzyt_mobilni"> Mariola Kowalska </a> <span class="glyphicon glyphicon-star align-center"></span></td>
+			<td>Bardzo długi temat nagrania "temat nagrania"</td>
+			<td>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. </td>
+			<td>03:15:45</td>
+			<td>
+			<img src="images/przyklad100x100.jpg" style="cursor: pointer;"  data-toggle="modal" data-target="#myModal4">
+				<div id="myModal4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				
+				
+				<img src="images/przyklad3.jpg" class="img-responsive center-block" >
+				</div>
+				</div>
+			</td>
+			<td><button title="Edit" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+          <i class="glyphicon glyphicon-play"></i> 
+          </button></td>
+			<td><button title="Edit" data-toggle="modal" data-target="#myModal" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+			<td><input type="checkbox" value=""></td>
+		</tr>
+		<tr>	
+
+			<td>2016-06-27 <br> 12:42:16</td>
+			<td width="10%"><a href="uzyt_mobilni"> Kamil Manieczyk </a> <span class="glyphicon glyphicon-star align-center"></span></td>
+			<td>Bardzo długi temat nagrania "temat nagrania"</td>
+			<td>W przeciwieństwie do rozpowszechnionych opinii, Lorem Ipsum nie jest tylko przypadkowym tekstem. Ma ono korzenie w klasycznej łacińskiej literaturze z 45 roku przed Chrystusem, czyli ponad 2000 lat temu! Richard McClintock, wykładowca łaciny na uniwersytecie Hampden-Sydney w Virginii</td>
+			<td>03:15:45</td>
+			<td>
+			<img src="images/przyklad100x100.jpg" style="cursor: pointer;"  data-toggle="modal" data-target="#myModal5">
+				<div id="myModal5" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				
+				
+				<img src="images/przyklad3.jpg" class="img-responsive center-block" >
+				</div>
+				</div>		
+			</td>
+			  <td><button title="Edit" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+          <i class="glyphicon glyphicon-play"></i> 
+          </button></td>
+			<td><button title="Edit" data-toggle="modal" data-target="#myModal" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+			<td><input type="checkbox" value=""></td>
+		</tr>
+		<tr>	
+
+			<td>2016-06-27 <br> 12:42:16</td>
+			<td width="10%"><a href="uzyt_mobilni"> Joanna Piotrowska  </a> <span class="glyphicon glyphicon-star align-center"></span></td>
+			<td>Wszystkie Internetowe generatory Lorem Ipsum mają tendencje do kopiowania już istniejących bloków..</td>
+			<td>Aby rozpocząć, należy określić średnią długość linii i narysować linię pionową na dole strony. Liczenie wszystkich znaków w jednej pełnej linii.</td>
+			<td>03:15:45</td>
+			<td><img src="images/przyklad100x100.jpg" class="img-responsive" alt="Responsive image"></td>
+			  <td><button title="Edit" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+          <i class="glyphicon glyphicon-play"></i> 
+          </button></td>
+			<td><button title="Edit" data-toggle="modal" data-target="#myModal" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+			<td><input type="checkbox" value=""></td>
+		</tr>
+		<tr>	
+
+			<td>2016-06-27 <br> 12:42:16</td>
+			<td width="10%"><a href="uzyt_mobilni"> Jan Kowalski </a> <span class="glyphicon glyphicon-star align-center"></span></td>
+			<td>Bardzo długi temat nagrania "temat nagrania"</td>
+			<td>Aby rozpocząć, należy określić średnią długość linii i narysować linię pionową na dole strony. Liczenie wszystkich znaków w jednej pełnej linii od lewego marginesu do tej linii, a następnie pomnożyć przez wynik przez liczbę linii na stronie. To powinno zapewnić mniej więcej liczbę znaków na stronę.</td>
+			<td>03:15:45</td>
+			<td><img src="images/przyklad100x100.jpg" class="img-responsive" alt="Responsive image"></td>
+			  <td><button title="Edit" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+          <i class="glyphicon glyphicon-play"></i> 
+          </button></td>
+			<td><button title="Edit" data-toggle="modal" data-target="#myModal" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+			 <td><input type="checkbox" value=""></td>
+		</tr>
+		<tr>	
+
+			<td>2016-06-27 <br> 12:42:16</td>
+			<td width="10%"><a href="uzyt_mobilni"> Jan Kowalski </a> <span class="glyphicon glyphicon-star align-center"></span></td>
+			<td>Bardzo długi temat nagrania "temat nagrania"</td>
+			<td>Aby rozpocząć, należy określić średnią długość linii.</td>
+			<td>03:15:45</td>
+			<td><img src="images/przyklad100x100.jpg" class="img-responsive" alt="Responsive image"></td>
+			  <td><button title="Edit" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+          <i class="glyphicon glyphicon-play"></i> 
+          </button></td>
+			<td><button title="Edit" data-toggle="modal" data-target="#myModal" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+			 <td><input type="checkbox" value=""></td>
+		</tr>
+		<tr>	
+
+			<td>2016-06-27 <br> 12:42:16</td>
+			<td width="10%"><a href="uzyt_mobilni"> Jan Kowalski </a> <span class="glyphicon glyphicon-star align-center"></span></td>
+			<td>Bardzo długi temat nagrania "temat nagrania"</td>
+			<td>Standardowy blok Lorem Ipsum, używany od XV wieku, jest odtworzony niżej dla zainteresowanych. Fragmenty 1.10.32 i 1.10.33 z „de Finibus Bonorum et Malorum” Cycerona, są odtworzone w dokładnej, oryginalnej formie, wraz z angielskimi tłumaczeniami H. Rackhama z 1914 roku.</td>
+			<td>03:15:45</td>
+			<td><img src="images/przyklad100x100.jpg" class="img-responsive" alt="Responsive image"></td>
+			  <td><button title="Edit" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+          <i class="glyphicon glyphicon-play"></i> 
+          </button></td>
+			<td><button title="Edit" data-toggle="modal" data-target="#myModal" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+			 <td><input type="checkbox" value=""></td>
+		</tr>
+
+	</tbody>
+</table>
+</div>
+</div>
+</div><!--koniec row--> 
+             
+<!-- Paginacja--> 
+<div class="col-sm-12 col-md-8" style="display: inline; text-align: center;">
+	<ul class="cd-pagination animated-buttons custom-icons">
+		<li class="button"><a href="#0"><i>Poprzedni</i></a></li>
+		<li><a href="#0">1</a></li>
+		<li><a href="#0">2</a></li>
+		<li><a class="current" href="#0">3</a></li>
+		<li><a href="#0">4</a></li>
+		<li><span>...</span></li>
+		<li><a href="#0">20</a></li>
+		<li class="button"><a href="#0"><i>Następny</i></a></li>
+	</ul>
+</div>
+<div class="col-sm-12 col-md-4">
+	<div class="form-group form-inline pull-right" style=" display: inline; margin-top: 15px;">
+		<div class="pull-right">
+			<label style="font-weight: 100;"></label>
+
+			<select class="selectpicker" data-style="btn-red">  
+				<option>Wybierz akcję</option>
+				<option>Zatwierdź</option>
+				<option>Przenieś do kosza</option>
+			</select>
+			<span><button type="button" class="btn btn-red btn-md raised">Wykonaj</button></span>
+		</div>
+	</div>
+
+
+
+</div>
+
+<!-- /.row -->
+  <!--Koniec Paginacji--> 
+
+  <!--Pop UP-->
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    		<div class="modal-dialog">
+    
+          
+                
+<!-- Edycja Media-->                        
+<!-- Modal content-->
+<div class="modal-content modal-lg-2">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<h4 class="modal-title"><img src="images/pasek.png" style="display: block;  width: 100%; padding-bottom:15px; margin-left: auto; margin-right: auto; "></h4>
+</div>
+<div class="modal-body">
+<div class="row">
+<div class="col-md-12 col-sm-12">
+
+
+<div class="col-md-4 col-sm-4" >
+<table class="table  table-condensed" style="width: 100%">
+  <thead>
+
+  </thead>
+  <tbody>
+
+	<tr>
+		<h4><strong>Dane Materiału</strong></h4>
+		<td><b>Autor:</b></td>
+		<td>szymon_kolasa</td>
+	</tr>
+
+	<tr class="bg-primary">
+		<td><b>Ranga:</b></td>
+		<td>Użytkownik</td>
+	</tr>
+
+	<tr >
+		<td><b>Status:</b> </td>
+		<td>Nowe</td>
+	</tr>
+
+	<tr class="bg-primary">
+		<td><b>Data:</b></td>
+		<td>12-06-2016 10:54</td>
+	</tr>
+
+	<tr>
+		<td><b>Długość:</b></td>
+		<td>02:38</td>
+	</tr>
+
+	<tr class="bg-primary">
+		<td><b>Nazwa:</b></td> 
+		<td>1234567_1234_jan35</td>
+	</tr>
+
+	  <tr>
+		  <td><b>Temat:</b></td>
+	  <td><br>
+		  <select class="selectpicker" data-style="btn-red" style="margin-bottom: 50px">
+			  <option>Temat nagrania</option>
+			  <option>O dzieciach które potrzebują pomocy</option>
+			  <option>Kobiety wyszły na ulicę</option>
+			  <option>Pomoc techniczna</option>
+		  </select>
+		  <br><br>
+		  
+	  </td>
+	  </tr>
+
+	  <tr>
+		  <td><b>Komentarz autora:</b><br></td> 
+	  <td><br>
+		  <p>Jest dostępnych wiele różnych wersji Lorem Ipsum, ale większość zmieniła się pod wpływem dodanego humoru czy przypadkowych słów, które nawet w najmniejszym stopniu nie przypominają istniejących.</p>
+	  </td>
+	  </tr>
+
+  </tbody>
+</table>
+</div>
+
+<div class="col-md-5 col-sm-4" >
+
+	<tr>
+		<h4><strong>Dodaj komentarz redakcyjny</strong></h4>
+	<textarea class="form-control" rows="3" style="min-width: 100%">
+			</textarea>
+
+	</tr>
+    <button type="button" class="btn btn-red btn-md raised pull-right" data-dismiss="modal" style="margin-top: 15px; margin-bottom: 15px;">Dodaj komentarz</button>
+	
+
+	<tr class="info" style="margin-top: 5px">
+
+	<div class="row">
+	<div class="col-md-12 col-sm-12">
+	<h4><strong>Komentarze redakcyjne</strong></h4> 
+	</div><!-- /col-sm-12 -->
+	</div><!-- /row -->
+	<div class="row">
+	<div class="scroll">
+	<div class="panel panel-default">
+	<div class="panel-heading">
+	<span class="glyphicon glyphicon-user" style="padding-right: 5px;"></span><strong>Jan Kowalski</strong> <span class="text-muted pull-right">01-02-2016</span></div>
+	<div class="panel-body">
+	W przeciwieństwie do rozpowszechnionych opinii, Lorem Ipsum nie jest tylko przypadkowym tekstem. Ma ono korzenie w klasycznej łacińskiej literaturze z 45 roku
+	</div><!-- /panel-body -->
+	</div><!-- /panel panel-default -->
+	<div class="panel panel-default">
+	<div class="panel-heading">
+	<span class="glyphicon glyphicon-user" style="padding-right: 5px;"></span><strong>Marian Opania</strong> <span class="text-muted pull-right">01-02-2016</span>
+	</div>
+	<div class="panel-body">
+	W przeciwieństwie do rozpowszechnionych opinii, Lorem Ipsum nie jest tylko przypadkowym tekstem. Ma ono korzenie w klasycznej łacińskiej literaturze z 45 roku
+	</div><!-- /panel-body -->
+	</div><!-- /panel panel-default -->
+	<div class="panel panel-default">
+	<div class="panel-heading">
+	<span class="glyphicon glyphicon-user" style="padding-right: 5px;"></span><strong>Patryk Sanecki</strong> <span class="text-muted pull-right">01-02-2016</span>
+	</div>
+	<div class="panel-body">
+	W przeciwieństwie do rozpowszechnionych opinii, Lorem Ipsum nie jest tylko przypadkowym tekstem. Ma ono korzenie w klasycznej łacińskiej literaturze z 45 roku
+	</div><!-- /panel-body -->
+	</div><!-- /panel panel-default -->
+	<div class="panel panel-default">
+	<div class="panel-heading">
+	<span class="glyphicon glyphicon-user" style="padding-right: 5px;"></span><strong>Nazwa użytkownika</strong> <span class="text-muted">01-02-2016</span> 
+	</div>
+	<div class="panel-body">
+	Przykładowy komentarz
+	</div><!-- /panel-body -->
+	</div><!-- /panel panel-default -->
+	<div class="panel panel-default">
+	<div class="panel-heading">
+	<span class="glyphicon glyphicon-user" style="padding-right: 5px;"></span><strong>Nazwa użytkownika</strong> <span class="text-muted">01-02-2016</span> 
+	</div>
+	<div class="panel-body">
+	Przykładowy komentarz
+	</div><!-- /panel-body -->
+	
+	</div><!-- /panel panel-default -->
+		</div>
+	</div><!-- /row -->
+	
+	
+
+	</tr>
+
+
+</div>
+
+<div class="col-md-3 col-sm-4">
+<table class="table  table-condensed">
+<tbody style="width: 100%;">
+<tr>
+<h4><strong>Przesłane zdjęcie</strong></h4>
+<img style="margin-bottom: 5px;" src="images/przyklad3.jpg" class="img-responsive" alt="Responsive image">
+</tr>
+<tr >
+<div class="btn-group-xs" style="margin-right: auto; margin-left: auto;">
+<button type="button" class="btn btn-red btn-lg" style="margin-right: 15px"><span class="glyphicon glyphicon-download-alt"></span> pobierz wav</button>
+<button type="button" class="btn btn-red btn-lg"><span class="glyphicon glyphicon-picture"></span> pobierz zdjecie</button>
+</div>
+</tr>
+<tr>
+<h4 class="bg-primary" style="color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 22px; font-weight: 800; line-height: 72px; margin: 20px 0 24px; text-align: center; text-transform: uppercase;">Historia pobrań</h4>
+</tr>
+<tr>
+<div class="scroll2">
+	<p><strong>12-06-2016 10:45</strong> Patryk Sanecki</p>
+	<p>12-06-2016 10:45 Jan kowalski</p>
+	<p><strong>12-06-2016 10:45</strong> Patryk Sanecki</p>
+	<p>12-06-2016 10:45 Piotr Nowakowski</p>
+	<p><strong>12-06-2016 10:45</strong> Piotr Nowakowski</p>
+	<p>12-06-2016 10:45 Piotr Nowakowski</p>
+	<p><strong>12-06-2016 10:45</strong> Piotr Nowakowski</p>
+	<p>12-06-2016 10:45 Piotr Nowakowski</p>
+	<p><strong>12-06-2016 10:45</strong> Piotr Nowakowski</p>
+	<p>12-06-2016 10:45 Piotr Nowakowski</p>
+	<p><strong>12-06-2016 10:45</strong> Piotr Nowakowski</p>
+	<p>12-06-2016 10:45 Piotr Nowakowski</p>
+	<p><strong>12-06-2016 10:45</strong> Piotr Nowakowski</p>
+	<p>12-06-2016 10:45 Piotr Nowakowski</p>
+	<p><strong>12-06-2016 10:45</strong> Piotr Nowakowski</p>
+	<p>12-06-2016 10:45 Piotr Nowakowski</p>
+	</div>
+
+</tr>
+</tbody>
+</table>
+	</div>
+</div>
+
+</div>
+</div>
+<div class="modal-footer">
+
+<button type="button" class="btn btn-red btn-md  pull-right" data-dismiss="modal" >Zapisz i zamknij</button>
+<button type="button" class="btn btn-red btn-md  pull-right" data-dismiss="modal" style="margin-right: 5px; ">Odrzuć zmiany</button>
+
+</div>
+</div>
+</div>                
+
+</div>
+</div>
+<!-- Koniec Modala -->   
+           
+                    
+ </div><!-- /#pcontainer-fluid-->                   
+                    
+                    
+</div>
+      <!-- /#page-wrapper -->
+
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/modernizr.js"></script>
+	<script src="js/bootstrap-datetimepicker.js"></script>
+	<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script>
+	$(document).ready(function() {
+    $('#example').DataTable( {
+        "paging":   false,
+        "info":     false,
+		"search":   false
+    } );
+	} );
+	</script>
+   <script>
+	   $(document).ready(function() {
+  var icon = $('.play');
+  icon.click(function() {
+     icon.toggleClass('active');
+     return false;
+  });
+});
+	</script>
+    <!-- Latest compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.0/js/bootstrap-select.min.js"></script>
+
+</body>
+
+</html>
+

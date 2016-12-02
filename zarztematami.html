@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+	<title>Tematy</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/sb-admin.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.0/css/bootstrap-select.min.css">
+
+<!-- Custom Fonts -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+</style> 
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+    <div id="wrapper">
+	<!-- Nawigacja -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+<!-- Mobilnie Menu i Logo -->
+<ul class="nav navbar-nav left-nav">
+	<li><a href="index.html"><img style="width: 30%; padding-left:15px; visibility: hidden;" src="agora.png"></a></li>
+	<li><a href="index.html">Nowe</a></li>
+	<li><a href="zatwierdzoneutwory.html">Zatwierdzone</a></li>
+	<li><a href="kosz.html">Kosz</a></li>
+</ul>
+          
+<!-- Top Menu Prawa Strona -->
+<ul class="nav navbar-right top-nav">
+
+  <!--Ustawienia -->
+  <li class="dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span> Ustawienia<b class="caret"></b></a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="zarztematami.html"><span class="glyphicon glyphicon-tags"></span> Tematy</a>
+			</li>
+			<li>
+				<a href="uzyt_mobilni.html"><span class="glyphicon glyphicon-phone"></span> Użytkownicy mobilni</a>
+			</li>
+			<li>
+				<a href="uzyt_systemowi.html"><span class="glyphicon glyphicon-user"></span> Administratorzy</a>
+			</li>
+			<li class="divider"></li>
+			<li>
+				<a href="#"><span class="glyphicon glyphicon-off"></span> Wyloguj</a>
+			</li>
+		</ul>
+	</li> 
+
+</ul>
+</nav> <!--Koniec nawigacji -->
+
+<div id="page-wrapper">
+	<div class="container-fluid">
+			
+			<!-- Nagłówek Strony -->
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="page-header">
+						<small>Tematy</small>
+					</h1>
+				</div>
+			</div>
+			<!-- /.row -->
+			
+		<div class="row">                
+			 <div class="col-md-12 col-sm-12">
+				<div class="col-md-4 col-sm-8">
+							<div class="row">
+			<div class="col-md-6 col-sm-6">
+			<div class="custom-search-input">
+			<div class="input-group">
+			<input type="text" class="form-control input-lg" placeholder="Temat Nagrania" />
+			<span class="input-group-btn">
+			<button class="btn btn-info btn-lg" type="button">
+			<i class="glyphicon glyphicon-search"></i>
+			</button>
+			</span>
+			</div>
+			</div>
+			</div>
+  <div class="col-md-6 col-sm-6">
+     <div class="custom-search-input">
+                <div class="input-group">
+                    <input type="text" class="form-control input-lg" placeholder="Status" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+  </div>
+				 </div>
+		 </div>
+				
+				
+				
+
+				<div class="col-md-4">       
+
+
+				<div class="form-group col-md-6 col-sm-6">
+					<div class="input-group date" id="datetimepicker1">
+						<input type="text" class="form-control" placeholder="Data od:"/>
+						<span class="input-group-addon">
+							<span class="glyphicon glyphicon-calendar"></span>
+						</span>
+					</div>
+				</div>
+
+				<div class="form-group col-md-6 col-sm-6">
+					<div class="input-group date" id="datetimepicker2">
+						<input type="text" class="form-control" placeholder="Data do:"/>
+						<span class="input-group-addon">
+							<span class="glyphicon glyphicon-calendar"></span>
+						</span>
+					</div>
+				</div>
+
+				</div>  
+
+				<div class="col-md-4 col-sm-4">
+					<div class="col-md-4 ">
+			
+					<div class="button-group">
+						<button type="button" class="btn btn-info dropdown-toggle dropdown-checkoxes" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span> Status <span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li><a href="#" class="small" data-value="VIP" tabIndex="-1"><input type="checkbox"/>&nbsp;Opublikowany</a></li>
+							<li><a href="#" class="small" data-value="Użytkownik" tabIndex="-1"><input type="checkbox"/>&nbsp;Nowy</a></li>
+							<li><a href="#" class="small" data-value="Spamer" tabIndex="-1"><input type="checkbox"/>&nbsp;Zakończony</a></li>
+						</ul>
+					</div>
+					</div>
+					
+				<div class="col-md-8 ">
+					<div class="toggle-button toggle-button--tuli">
+						<input id="toggleButton11" type="checkbox">
+						<label for="toggleButton11">Przypięty</label>
+						<div class="toggle-button__icon"></div>
+					</div>
+					</div>
+				</div>        
+      		</div>
+	
+	   </div><!-- /.row -->
+	   <!--Koniec pierwszego wiersza-->
+			
+			
+	   <div class="row" style="padding-top: 1%;">	
+			<div class="col-md-12">	
+			
+			<div class="col-md-8">
+		<button type="button" class="btn btn-sm btn-filtr">Przypięty<span class="glyphicon glyphicon-remove"></span></button>
+		<button type="button" class="btn btn-sm btn-filtr">O dzieciach które potrzebują pomocy<span class="glyphicon glyphicon-remove"></span></button>
+		<button type="button" class="btn btn-sm btn-filtr">Okres publikacji <span class="glyphicon glyphicon-remove"></span></button>
+				</div>
+			
+			<div class="col-md-4">
+				<div class="col-md-6">
+				<button type="button" class="btn btn-sm btn-red pull-right">Wyczyść fitlry</button>
+				</div>
+				<div class="col-md-6">
+				<button type="button" class="btn btn-sm btn-info pull-right">Dodaj temat <span class="glyphicon glyphicon-plus"></span></button>
+				</div>
+			</div>
+		</div>
+
+		
+		<!--Koniec filtrów-->
+	<div class="col-md-12">
+                     
+                        <hr />
+                      
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped">
+			<thead>
+				<tr>					
+			 <th>Lp.</th>
+			<th width="10%">Utworzone <span><i style="opacity: 1;" class="glyphicon glyphicon-chevron-up"></i> </span></th>
+			<th width="10%">Opublikowano<span><i style="opacity: 1;" class="glyphicon glyphicon-chevron-up"></i> </span></th>
+			<th width="10%">Wycofane<span><i style="opacity: 1;" class="glyphicon glyphicon-chevron-up"></i> </span></th>
+			<th>Temat <span><i style="opacity: 1;" class="glyphicon glyphicon-chevron-up"></i> </span></th>
+			<th width="25%">Opis <span><i style="opacity: 1;" class="glyphicon glyphicon-chevron-up"></i> </span></th>
+			<th>Status <span><i style="opacity: 1;" class="glyphicon glyphicon-chevron-up"></i> </span></th>
+			<th width="10%">Przypięty <span><i style="opacity: 1;" class="glyphicon glyphicon-chevron-up"></i> </span></th>
+			<th width="10%">Liczba nagrań</th>
+			<th style="text-align:center;">Edycja</th>
+
+		</tr>
+	</thead>
+	<tbody>
+	 <tr>   
+			<td>1</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016</td>
+			<td>Jest to bardzo popularna w czasach renesansu rozprawa na temat etyki. </td>
+			<td>Finibus Bonorum et Malorum”, czyli „O granicy dobra i zła”, napisanej właśnie w 45 p.n.e. przez Cycerona. Jest to bardzo popularna w czasach renesansu rozprawa na temat etyki. </td>
+			<td>Opublikowany</td>
+			<td>Tak</td>
+			<td><button type="button" class="btn btn-md btn-link" style="padding: 0px;">7</button></td>
+			<td><button title="Edit" data-toggle="modal" data-target="#myModal" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016</td>
+			<td>Przykładowy temat</td>
+			<td>Finibus Bonorum et Malorum”, czyli „O granicy dobra i zła”, napisanej właśnie w 45 p.n.e. przez Cycerona. Jest to bardzo popularna w czasach renesansu rozprawa na temat etyki. </td>
+			<td>Nowy</td>
+			<td>Tak</td>
+			<td><button type="button" class="btn btn-md btn-link" style="padding: 0px;">17</button></td>
+			<td><button title="Edit" data-toggle="modal" data-target="#myModal" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+		</tr>
+		 <tr>
+			<td>3</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016</td>
+			<td>Przykładowy temat</td>
+			<td>Finibus Bonorum et Malorum”, czyli „O granicy dobra i zła”, napisanej właśnie w 45 p.n.e. przez Cycerona. Jest to bardzo popularna w czasach renesansu rozprawa na temat etyki. </td>
+			<td>Zakończony</td>
+			<td>Tak</td>
+			<td><button type="button" class="btn btn-md btn-link" style="padding: 0px;">77</button></td>
+			<td><button title="Edit" data-toggle="modal" data-target="#myModal" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+		</tr>
+		 <tr>
+			<td>4</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016</td>
+			<td>Przykładowy temat</td>
+			<td>Finibus Bonorum et Malorum”, czyli „O granicy dobra i zła”, napisanej właśnie w 45 p.n.e. przez Cycerona. Jest to bardzo popularna w czasach renesansu rozprawa na temat etyki. </td>
+			<td>Zakończony</td>
+			<td>Tak</td>
+			<td><button type="button" class="btn btn-md btn-link" style="padding: 0px;">37</button></td>
+			<td><button title="Edit" data-toggle="modal" data-target="#myModal" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+		</tr>
+		 <tr>
+			<td>5</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016</td>
+			<td>Przykładowy temat</td>
+			<td>Finibus Bonorum et Malorum”, czyli „O granicy dobra i zła”, napisanej właśnie w 45 p.n.e. przez Cycerona. Jest to bardzo popularna w czasach renesansu rozprawa na temat etyki. </td>
+			<td>Zakończony</td>
+			<td>Tak</td>
+			<td><button type="button" class="btn btn-md btn-link" style="padding: 0px;">67</button></td>
+			<td><button title="Edit" data-toggle="modal" data-target="#myModal" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+		</tr>
+		 <tr>
+			<td>6</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016</td>
+			<td>Przykładowy temat</td>
+			<td>Finibus Bonorum et Malorum”, czyli „O granicy dobra i zła”, napisanej właśnie w 45 p.n.e. przez Cycerona. Jest to bardzo popularna w czasach renesansu rozprawa na temat etyki. </td>
+			<td>Zakończony</td>
+			<td>Tak</td>
+			<td><button type="button" class="btn btn-md btn-link" style="padding: 0px;">1337</button></td>
+			<td><button title="Edit" data-toggle="modal" data-target="#myModal" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+		</tr>
+		 <tr>
+			<td>7</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016</td>
+			<td>Przykładowy temat</td>
+			<td>Finibus Bonorum et Malorum”, czyli „O granicy dobra i zła”, napisanej właśnie w 45 p.n.e. przez Cycerona. Jest to bardzo popularna w czasach renesansu rozprawa na temat etyki. </td>
+			<td>Zakończony</td>
+			<td>Nie</td>
+			<td><button type="button" class="btn btn-md btn-link" style="padding: 0px;">7331</button></td>
+			<td><button title="Edit" data-toggle="modal" data-target="#myModal" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+		</tr>
+		 <tr>
+			<td>8</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016</td>
+			<td>Przykładowy temat</td>
+			<td>Finibus Bonorum et Malorum”, czyli „O granicy dobra i zła”, napisanej właśnie w 45 p.n.e. przez Cycerona. Jest to bardzo popularna w czasach renesansu rozprawa na temat etyki. </td>
+			<td>Zakończony</td>
+			<td>Nie</td>
+			<td><button type="button" class="btn btn-md btn-link" style="padding: 0px;">75</button></td>
+			<td><button title="Edit" data-toggle="modal" data-target="#myModal" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+		</tr>
+		 <tr>
+			<td>9</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016</td>
+			<td>Przykładowy temat</td>
+			<td>Finibus Bonorum et Malorum”, czyli „O granicy dobra i zła”, napisanej właśnie w 45 p.n.e. przez Cycerona. Jest to bardzo popularna w czasach renesansu rozprawa na temat etyki. </td>
+			<td>Zakończony</td>
+			<td>Nie</td>
+			<td><button type="button" class="btn btn-md btn-link" style="padding: 0px;">57</button></td>
+			<td><button title="Edit" data-toggle="modal" data-target="#myModal" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+		</tr>
+		 <tr>
+			<td>10</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016</td>
+			<td>Przykładowy temat</td>
+			<td>Finibus Bonorum et Malorum”, czyli „O granicy dobra i zła”, napisanej właśnie w 45 p.n.e. przez Cycerona. Jest to bardzo popularna w czasach renesansu rozprawa na temat etyki. </td>
+			<td>Zakończony</td>
+			<td>Nie</td>
+			<td><button type="button" class="btn btn-md btn-link" style="padding: 0px;">87</button></td>
+			<td><button title="Edit" data-toggle="modal" data-target="#myModal" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+		</tr>
+		 <tr>
+			<td>11</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016</td>
+			<td>Przykładowy temat</td>
+			<td>Finibus Bonorum et Malorum”, czyli „O granicy dobra i zła”, napisanej właśnie w 45 p.n.e. przez Cycerona. Jest to bardzo popularna w czasach renesansu rozprawa na temat etyki. </td>
+			<td>Zakończony</td>
+			<td>Nie</td>
+			<td><button type="button" class="btn btn-md btn-link" style="padding: 0px;">78</button></td>
+			<td><button title="Edit" data-toggle="modal" data-target="#myModal" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+		</tr>
+		 <tr>
+			<td>12</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016</td>
+			<td>Przykładowy temat</td>
+			<td>Finibus Bonorum et Malorum”, czyli „O granicy dobra i zła”, napisanej właśnie w 45 p.n.e. przez Cycerona. Jest to bardzo popularna w czasach renesansu rozprawa na temat etyki. </td>
+			<td>Zakończony</td>
+			<td>Nie</td>
+			<td><button type="button" class="btn btn-md btn-link" style="padding: 0px;">107</button></td>
+			<td><button title="Edit" data-toggle="modal" data-target="#myModal" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+		</tr>
+		 <tr>
+			<td>13</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016  10:34</td>
+			<td>12-06-2016</td>
+			<td>Przykładowy temat</td>
+			<td>Finibus Bonorum et Malorum”, czyli „O granicy dobra i zła”, napisanej właśnie w 45 p.n.e. przez Cycerona. Jest to bardzo popularna w czasach renesansu rozprawa na temat etyki. </td>
+			<td>Zakończony</td>
+			<td>Nie</td>
+			<td><button type="button" class="btn btn-md btn-link" style="padding: 0px;">70</button></td>
+			<td><button title="Edit" data-toggle="modal" data-target="#myModal" class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+		</tr>
+
+
+	</tbody>
+</table>
+                        </div>
+                    </div>
+                    
+                    
+<!-- Paginacja--> 
+<div class="row">
+	<div class="col-md-12">
+		<div class="col-md-7 col-sm-7">
+			<ul class="cd-pagination animated-buttons custom-icons">
+		<li class="button"><a href="#0"><i>Poprzedni</i></a></li>
+		<li><a href="#0">1</a></li>
+		<li><a href="#0">2</a></li>
+		<li><a class="current" href="#0">3</a></li>
+		<li><a href="#0">4</a></li>
+		<li><span>...</span></li>
+		<li><a href="#0">20</a></li>
+		<li class="button"><a href="#0"><i>Następny</i></a></li>
+	</ul>
+		</div>
+		<div class="col-md-1 col-md-offset-4">
+				 <button type="button" class="btn btn-sm btn-info pull-right" style="margin-top: 25px;">Dodaj temat <span class="glyphicon glyphicon-plus"></span></button>
+		</div>
+
+	</div>
+</div> <!-- /.row --> 
+
+                    
+                 
+                 
+                            
+          <!--Pop UP-->
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    		<div class="modal-dialog">
+    
+          
+                
+                            
+    <!-- Modal content-->
+      <div class="modal-content modal-lg-3">
+        <div class="modal-header bg-primary">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Edycja tematu</h3>
+        </div>
+        <div class="modal-body">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="col-md-6">
+						<table class="table  table-condensed">
+							<thead>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Temat:</th>
+									<td>Przykładowy temat</td>
+									<td><button title="Edit"  class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+								</tr>
+								<tr>
+									<th >Opis tematu:</th>
+									<td>Opis przykładowego tematu</td>
+									<td><button title="Edit"  class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+								</tr>
+								<tr>
+									<th>Okres publikacji:</th>
+									<td>15-04-2017 - 15-04-2017</td>
+									<td><button title="Edit"  class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+								</tr>
+								<tr>
+									<th>Dostępny dla:</th>
+									<td colspan="2">
+										
+										<div class="toggle-button toggle-button--tuli">
+						<input id="toggleButton12" type="checkbox">
+						<label for="toggleButton12">Użytkownik</label>
+						<div class="toggle-button__icon"></div>
+					</div>
+							
+							<div class="toggle-button toggle-button--tuli">
+						<input id="toggleButton13" type="checkbox">
+						<label for="toggleButton13">VIP</label>
+						<div class="toggle-button__icon"></div>
+					</div></td>
+								</tr>
+						  </tbody>
+						</table>
+		 
+					</div>
+					<div class="col-md-6">
+						<table class="table  table-condensed">
+							<thead>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>Status:</strong></td>
+								  <td>
+									<select class="selectpicker" data-style="btn-red">
+									  <option>Temat nagrania</option>
+									  <option>Nowy</option>
+									  <option>Opublikowany</option>
+								  	</select>
+								  </td>
+								</tr>
+								<tr>
+								  <td>
+								
+									<div class="toggle-button toggle-button--tuli">
+									<input id="toggleButton14" type="checkbox">
+									<label for="toggleButton14">Użytkownik</label>
+									<div class="toggle-button__icon"></div>
+									</div>	
+									
+								  </td>
+								  <td>Pzypięty</td>
+								</tr>
+								<tr>
+									<td><strong>Data utworzenia:</strong></td>
+								  <td>01-01-2000</td>
+								</tr>
+								<tr>
+									<td><strong>Utworzony przez:</strong></td>
+								  <td>John Doe</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-red btn-md raised pull-right" data-dismiss="modal" >Zapisz i zamknij</button>
+			 <button type="button" class="btn btn-red btn-md raised pull-right" data-dismiss="modal" style="margin-right: 5px; ">Odrzuć zmiany</button>
+
+			</div>
+		</div>
+      </div>                
+                    
+			</div>
+  </div>
+               
+               <!-- Koniec Modala -->
+               
+               
+               
+               
+                <!--Pop UP-->
+  <!-- Modal 2 Dodaj temat-->
+  <div class="modal fade" id="myModal2" role="dialog">
+    		<div class="modal-dialog">
+    
+          
+                
+                            
+    <!-- Modal content-->
+      <div class="modal-content modal-lg-3">
+        <div class="modal-header bg-primary">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Dodaj temat</h3>
+        </div>
+        <div class="modal-body">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="col-md-6">
+						<table class="table  table-condensed">
+							<thead>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Temat:</th>
+									<td>Przykładowy temat</td>
+									<td><button title="Edit"  class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+								</tr>
+								<tr>
+									<th >Opis tematu:</th>
+									<td>Opis przykładowego tematu</td>
+									<td><button title="Edit"  class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+								</tr>
+								<tr>
+									<th>Okres publikacji:</th>
+									<td>15-04-2017 - 15-04-2017</td>
+									<td><button title="Edit"  class="btn btn-danger" style="cursor: pointer; font-size:1.2em; display: block;   margin-left: auto;   margin-right: auto;">
+                <i class="glyphicon glyphicon-pencil"></i> 
+                </button></td>
+								</tr>
+								<tr>
+									<th>Dostępny dla:</th>
+									<td colspan="2">
+										
+										<div class="toggle-button toggle-button--tuli">
+						<input id="toggleButton15" type="checkbox">
+						<label for="toggleButton15">Użytkownik</label>
+						<div class="toggle-button__icon"></div>
+					</div>
+							
+							<div class="toggle-button toggle-button--tuli">
+						<input id="toggleButton16" type="checkbox">
+						<label for="toggleButton16">VIP</label>
+						<div class="toggle-button__icon"></div>
+					</div></td>
+								</tr>
+						  </tbody>
+						</table>
+		 
+					</div>
+					<div class="col-md-6">
+						<table class="table  table-condensed">
+							<thead>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>Status:</strong></td>
+								  <td>
+									<select class="selectpicker" data-style="btn-red">
+									  <option>Temat nagrania</option>
+									  <option>Nowy</option>
+									  <option>Opublikowany</option>
+								  	</select>
+								  </td>
+								</tr>
+								<tr>
+								  <td>
+								
+									<div class="toggle-button toggle-button--tuli">
+									<input id="toggleButton17" type="checkbox">
+									<label for="toggleButton17">Użytkownik</label>
+									<div class="toggle-button__icon"></div>
+									</div>	
+									
+								  </td>
+								  <td>Pzypięty</td>
+								</tr>
+								<tr>
+									<td><strong>Data utworzenia:</strong></td>
+								  <td>01-01-2000</td>
+								</tr>
+								<tr>
+									<td><strong>Utworzony przez:</strong></td>
+								  <td>John Doe</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-red btn-md raised pull-right" data-dismiss="modal" >Zapisz i zamknij</button>
+			 <button type="button" class="btn btn-red btn-md raised pull-right" data-dismiss="modal" style="margin-right: 5px; ">Odrzuć zmiany</button>
+
+			</div>
+		</div>
+      </div>                
+                    
+			</div>
+  </div>
+               
+               <!-- Koniec Modala2 Dodaj Temat -->
+               
+                
+                   
+                    
+ </div> <!-- /#pcontainer-fluid-->                   
+                    
+                    
+      </div>
+      <!-- /#page-wrapper -->
+      
+   </div>
+    <!-- /#wrapper -->
+
+     <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.js"></script>
+	<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script>
+	$(document).ready(function() {
+    $('#example').DataTable( {
+        "paging":   false,
+        "info":     false,
+		"search":   false
+    } );
+	} );
+	</script>
+    <!-- Latest compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.0/js/bootstrap-select.min.js"></script>
+
+</body>
+
+</html>
+
